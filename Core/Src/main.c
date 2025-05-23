@@ -96,6 +96,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  //  LED blink to confirm that the project is alive.
+	  // Turn ON led
+	     HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
+	     HAL_Delay(400);
+
+	  // Turn OFF led
+	     HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
+	     HAL_Delay(500);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
